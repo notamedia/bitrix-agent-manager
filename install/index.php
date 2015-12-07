@@ -38,6 +38,6 @@ class notamedia_agentmanager extends CModule
     
     public function DoUninstall()
     {
-        UnRegisterModule('notamedia.agent');
+        UnRegisterModule('notamedia.agentmanager');
     }
 }
