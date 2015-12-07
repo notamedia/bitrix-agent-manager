@@ -28,7 +28,7 @@ if (version_compare(SM_VERSION, '15.0.2') < 0)
 }
 else
 {
-    RegisterModule('notamedia.agent');
+    RegisterModule('notamedia.agentmanager');
     CAdminMessage::ShowNote(GetMessage('NOTAMEDIA_AGENT_INSTALL_COMPLETE_TITLE'));
     echo GetMessage('NOTAMEDIA_AGENT_INSTALL_COMPLETE_MESSAGE');
     ?>

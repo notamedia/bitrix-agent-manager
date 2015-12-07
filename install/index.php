@@ -7,10 +7,12 @@
 
 class notamedia_agentmanager extends CModule
 {
-    public $MODULE_ID = 'notamedia_agentmanager';
+    public $MODULE_ID = 'notamedia.agentmanager';
     
     public function __construct()
     {
+        IncludeModuleLangFile(__FILE__);
+        
         $arModuleVersion = [];
 
         include(__DIR__ . '/version.php');
