@@ -1,0 +1,23 @@
+{
+  "name": "notamedia/bitrix-agent-manager",
+  "description": "",
+  "keywords": [
+    "bitrix",
+    "module",
+    "agent"
+  ],
+  "homepage": "http://nota.media",
+  "type": "bitrix-module",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/notamedia/bitrix-agent-manager/issues",
+    "source": "http://github.com/notamedia/bitrix-agent-manager/"
+  },
+  "extra": {
+    "installer-name": "notamedia.agent"
+  },
+  "require": {
+    "php": ">=5.4.0",
+    "composer/installers": "~1"
+  }
+}
