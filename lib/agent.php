@@ -38,7 +38,7 @@ abstract class Agent
     }
 
     /**
-     * Agent body
+     * Running Agent by Bitrix.
      *
      * Bitrix calls this method to run Agent. Your Agents should be registered in the same format:
      * `\Vendor\Packeage\ClassName::agent();`. All arguments from this method should be duplicated in the object constructor:

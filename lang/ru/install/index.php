@@ -1,7 +1,7 @@
 <?php
 
 $MESS['NOTAMEDIA_AGENT_MODULE_NAME'] = 'Агентовод';
-$MESS['NOTAMEDIA_AGENT_MODULE_DESCRIPTION'] = '';
+$MESS['NOTAMEDIA_AGENT_MODULE_DESCRIPTION'] = 'Помогает создавать простые воркеры на Агентах «Битрикса»';
 $MESS['NOTAMEDIA_AGENT_PARTNER_NAME'] = 'Notamedia';
 $MESS['NOTAMEDIA_AGENT_PARTNER_URI'] = 'http://nota.media';
 $MESS['NOTAMEDIA_AGENT_INSTALL_TITLE'] = 'Установка модуля';
