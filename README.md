@@ -43,3 +43,7 @@ class SimpleWorker extends Agent
     }
 }
 ```
+
+And register your Agent in the Bitrix:
+
+![Agents list](agents-list.png)

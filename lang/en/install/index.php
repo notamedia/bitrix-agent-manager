@@ -1,7 +1,7 @@
 <?php
 
 $MESS['NOTAMEDIA_AGENT_MODULE_NAME'] = 'Agent Manager';
-$MESS['NOTAMEDIA_AGENT_MODULE_DESCRIPTION'] = 'Helps to create simple workers on the Agents of Bitrix.';
+$MESS['NOTAMEDIA_AGENT_MODULE_DESCRIPTION'] = 'Helps to create simple workers on the Agents of Bitrix';
 $MESS['NOTAMEDIA_AGENT_PARTNER_NAME'] = 'Notamedia';
 $MESS['NOTAMEDIA_AGENT_PARTNER_URI'] = 'http://nota.media';
 $MESS['NOTAMEDIA_AGENT_INSTALL_TITLE'] = 'Installation';

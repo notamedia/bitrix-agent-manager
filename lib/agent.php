@@ -41,7 +41,9 @@ abstract class Agent
      * Running Agent by Bitrix.
      *
      * Bitrix calls this method to run Agent. Your Agents should be registered in the same format:
-     * `\Vendor\Packeage\ClassName::agent();`. All arguments from this method should be duplicated in the object constructor:
+     * `\Vendor\Packeage\ClassName::agent();`. All arguments from this method should be duplicated in the object
+     * constructor:
+     * 
      * `agent($arg1, …, $arg2)` → `__construct($arg1, …, $arg2)`.
      *
      * @return string
@@ -65,7 +67,8 @@ abstract class Agent
     /**
      * Runs the Agent.
      *
-     * Notice, that overriding agent's initialisation and body, should be done though `init` and `execute` methods, not here.
+     * Notice, that overriding agent's initialisation and body, should be done though `init` and `execute` methods, not
+     * here.
      *
      * @see Agent::init()
      * @see Agent::execute()
