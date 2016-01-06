@@ -14,7 +14,7 @@
     "source": "http://github.com/notamedia/bitrix-agent-manager/"
   },
   "extra": {
-    "installer-name": "notamedia.agent"
+    "installer-name": "notamedia.agentmanager"
   },
   "require": {
     "php": ">=5.4.0",
