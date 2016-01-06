@@ -1,6 +1,6 @@
 {
   "name": "notamedia/bitrix-agent-manager",
-  "description": "",
+  "description": "Agent manager for Bitrix",
   "keywords": [
     "bitrix",
     "module",
