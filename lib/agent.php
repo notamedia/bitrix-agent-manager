@@ -10,13 +10,13 @@ namespace Notamedia\AgentManager;
 /**
  * Abstract class Agent for development simple workers.
  *
- * Algorithm the execution of Agent:
- * 1. Bitrix launch static method `Agent::agent()`. Your Agents should be registered in the same format:
+ * Algorithm of Agent execution:
+ * 1. Bitrix launches static method `Agent::agent()`. Your Agents should be registered in the same format:
  * `\Vendor\Packeage\ClassName::agent();`. All arguments from this method will be duplicated to the object constructor:
  * `agent($arg1, …, $arg2)` → `__construct($arg1, …, $arg2)`.
- * 2. Creates an object of Agent class.
- * 3. Execute `init()` method. Preparatory operations, for example: loading required modules.
- * 4. Execute `execute()` method. Main logic of your Agent.
+ * 2. Create an object of Agent class.
+ * 3. Call `init()` method. It is needed for some initial operations, for example: loading required modules.
+ * 4. Call `execute()` method. This will execute main agent's logic.
  */
 abstract class Agent
 {
@@ -28,7 +28,7 @@ abstract class Agent
     /**
      * Agent constructor.
      *
-     * All arguments from `agent()` method will be duplicated to the constructor:
+     * All arguments from `agent()` method should be duplicated in the constructor, for example:
      * ```
      * agent($arg1, …, $arg2)` → `__construct($arg1, …, $arg2)
      * ```
@@ -38,10 +38,10 @@ abstract class Agent
     }
 
     /**
-     * Running Agent by Bitrix.
+     * Agent body
      *
-     * Bitrix calls this method for run Agent. Your Agents should be registered in the same format:
-     * `\Vendor\Packeage\ClassName::agent();`. All arguments from this method will be duplicated to the object constructor:
+     * Bitrix calls this method to run Agent. Your Agents should be registered in the same format:
+     * `\Vendor\Packeage\ClassName::agent();`. All arguments from this method should be duplicated in the object constructor:
      * `agent($arg1, …, $arg2)` → `__construct($arg1, …, $arg2)`.
      *
      * @return string
@@ -65,7 +65,7 @@ abstract class Agent
     /**
      * Runs the Agent.
      *
-     * For the execute Agent must be overriding the init() and execute() method in a sub-class.
+     * Notice, that overriding agent's initialisation and body, should be done though `init` and `execute` methods, not here.
      *
      * @see Agent::init()
      * @see Agent::execute()
@@ -91,7 +91,7 @@ abstract class Agent
     }
 
     /**
-     * Checks Agent is the a recurring.
+     * Checks if Agent is the a recurring.
      *
      * @return bool
      */
